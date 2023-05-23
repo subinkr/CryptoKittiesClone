@@ -61,7 +61,7 @@ contract KittyAccessControl is Pausable {
         _pause();
     }
 
-    function unpause() public onlyCEO {
+    function unpause() public virtual onlyCEO {
         _unpause();
     }
 }
